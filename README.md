@@ -10,4 +10,4 @@
 1. make    ---  project application system.
 1. cmake   ---  control project system.
 1. git     ---  version control system.
-1.vscodium ---  editor.
+1. vscodium ---  editor.
