@@ -2,11 +2,15 @@
 int main(){
 using namespace std;
 
-int a = 12;
-int b = 14;
+int a = 20;
+int b = 21;
 
-cout<<"summ is:"<<a+b<<endl;
+
+cout<<"max is: "<<(max(a,b);)<<endl;
 
     return 0;
+}
 
+int max(int a, int b){
+    if(a<b){return(b);}else{return(a);}
 }
