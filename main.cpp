@@ -1,4 +1,6 @@
+#include "function.h" // подключаем свою библиотеку
 #include <iostream>
+
 int main(){
 using namespace std;
 
@@ -11,6 +13,3 @@ cout<<"max is: "<<(max(a,b);)<<endl;
     return 0;
 }
 
-int max(int a, int b){
-    if(a<b){return(b);}else{return(a);}
-}
