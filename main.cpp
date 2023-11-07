@@ -1,6 +1,7 @@
 #include <iostream>
 
-int max (int i1, int i2);
+#include "functions.h"
+
 
 
 int main() {
@@ -11,12 +12,3 @@ int main() {
 
 }
 
-
-
-int max (int i1, int i2){
-
-if (i1 > i2) return i1;
-
-return i2;
-
-}
