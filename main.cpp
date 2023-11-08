@@ -1,12 +1,15 @@
+#include "function.h" // подключаем свою библиотеку
 #include <iostream>
+
 int main(){
 using namespace std;
 
-int a = 12;
-int b = 14;
+int a = 20;
+int b = 21;
 
-cout<<"summ is:"<<a+b<<endl;
+
+cout<<"max is: "<<(max(a,b);)<<endl;
 
     return 0;
-
 }
+
