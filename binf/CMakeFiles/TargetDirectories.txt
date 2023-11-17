@@ -1,0 +1,2 @@
+/home/stud233/projects/op_23/binf/CMakeFiles/edit_cache.dir
+/home/stud233/projects/op_23/binf/CMakeFiles/rebuild_cache.dir
