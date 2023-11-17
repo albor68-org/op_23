@@ -1,5 +1,6 @@
-#include "function.h" // подключаем свою библиотеку
+
 #include <iostream>
+#include "function.h" // подключаем свою библиотеку
 
 int main(){
 using namespace std;
