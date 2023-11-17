@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/op_23.dir/src/main.cpp.o CMakeFiles/op_23.dir/src/functions.cpp.o -o op_23 

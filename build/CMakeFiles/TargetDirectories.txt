@@ -1,0 +1,3 @@
+/home/stud233/projects/op_23/build/CMakeFiles/op_23.dir
+/home/stud233/projects/op_23/build/CMakeFiles/edit_cache.dir
+/home/stud233/projects/op_23/build/CMakeFiles/rebuild_cache.dir
