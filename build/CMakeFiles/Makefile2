@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/stud233/projects/op_23/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/op_23.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,8 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/op_23.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/op_23.dir
+
+# All Build rule for target.
+CMakeFiles/op_23.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/op_23.dir/build.make CMakeFiles/op_23.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/op_23.dir/build.make CMakeFiles/op_23.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stud233/projects/op_23/build/CMakeFiles --progress-num=1,2,3 "Built target op_23"
+.PHONY : CMakeFiles/op_23.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/op_23.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud233/projects/op_23/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/op_23.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud233/projects/op_23/build/CMakeFiles 0
+.PHONY : CMakeFiles/op_23.dir/rule
+
+# Convenience name for target.
+op_23: CMakeFiles/op_23.dir/rule
+.PHONY : op_23
+
+# clean rule for target.
+CMakeFiles/op_23.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/op_23.dir/build.make CMakeFiles/op_23.dir/clean
+.PHONY : CMakeFiles/op_23.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
