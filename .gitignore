@@ -33,3 +33,5 @@
 main
 
 build/
+
+.vscode/
