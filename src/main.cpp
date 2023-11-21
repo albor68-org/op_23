@@ -5,7 +5,7 @@
 
 
 int main(){
-    std:: cout << "Наибольшее число: " << max(1,0) << std :: endl; 
+    std:: cout << "Наибольшее число: " << max(1,10) << std :: endl; 
     
 
 
