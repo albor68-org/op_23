@@ -8,4 +8,9 @@ TEST_CASE(){
     CHECK(max(0, 10) == 10);
     CHECK(max(-2, 2) == 2);
 
+    CHECK(sum(1,1) == 2);
+    CHECK(sum(-1,1) == 0);
+    CHECK(sum(-1,-1) == -2);
+
+    CHECK(square(2,2) == 4);
 }
