@@ -4,3 +4,13 @@ int max( int i1, int i2){
     return i2;
 
 }
+
+int add (int a, int b){
+    int c=a+b;
+    return c;
+}
+int square (int x, int y){
+    int s =x*y;
+   
+            return s;
+        }
