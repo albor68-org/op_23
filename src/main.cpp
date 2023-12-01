@@ -2,7 +2,7 @@
 #include "functions.h"
 
 int main () {
-    std::cout << "Наибольшее число: " << std::max(1, 2) << std::endl;
+    std::cout << "Наибольшее число: " << max(1, 2) << std::endl;
 
     std::cout << "Сумма: " << sum(5, 4) << std::endl;
 
