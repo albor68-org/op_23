@@ -11,3 +11,8 @@ TEST_CASE(){
     CHECK(summ(-2,2) == 0);
     CHECK(summ(1,2) == 3);
 }
+
+TEST_CASE(){
+    CHECK(sq(1,2) == 2);
+    CHECK(sq(4,5) == 20);
+}
