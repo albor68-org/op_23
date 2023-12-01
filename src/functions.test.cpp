@@ -11,4 +11,7 @@ TEST_CASE() {
 
     CHECK(max(-2, 2) == 2);
 
+    CHECK(CYMM(3, 3)== 6);
+    
+    CHECK(square(2,5)== 10);
 }
