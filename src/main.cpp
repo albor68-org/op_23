@@ -9,6 +9,9 @@ int main() {
     int square_height;
     int square_lenght;
     */
+    std::string word;
+    std::cin>>word;
+    write_1000(word);
     int i1;
     int i2;
     std::cout << "Запишите 2 числа, для поиска наибольшего" << std::endl;
