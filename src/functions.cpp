@@ -1,3 +1,9 @@
+#include <cstdio>
+void printEr(){
+    printf ("ERROR");
+}
+
+
 int max (int i1, int i2){
     if (i1 > i2) return i1;
 
@@ -11,5 +17,8 @@ int add (int a, int b){
 
 int square (int x, int y){
     int s = x*y;
-    return s;
+    if (s < 0){
+           printEr();
+    }else{
+    return s;}
 }
