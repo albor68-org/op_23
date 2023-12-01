@@ -1,5 +1,6 @@
 #include "functions.h"
 #include <catch2/catch.hpp>
+#include <math.h>
 
 TEST_CASE() {
 
