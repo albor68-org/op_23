@@ -16,3 +16,12 @@ TEST_CASE() {
     CHECK(sum(-5, -4) == -9);
     CHECK(sum(0, 3) == 3);
 }
+
+//тест для умножения
+TEST_CASE() {
+    CHECK(rectArea(5, 4) == 20);
+    CHECK(rectArea(-2, 2) == 0);
+    CHECK(rectArea(-5, -4) == 0);
+    CHECK(rectArea(0, 3) == 0);
+    CHECK(rectArea(20, 40) == 800);
+}
