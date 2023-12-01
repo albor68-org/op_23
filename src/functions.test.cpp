@@ -8,5 +8,9 @@ TEST_CASE(){    // ПРОВЕРКА
     CHECK(max(0,10) == 10);
     CHECK(max(-2,2) == 2);
 
+    CHECK(add(0,5) == 5);
+    CHECK(add(0,-5) == -5);
+    CHECK(square(4,2) == 8);
+
 }
 
