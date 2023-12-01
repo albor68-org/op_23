@@ -8,6 +8,5 @@ int sum (int a, int b) {
 }
 
 int square (int heigh, int width) {
-    if ((heigh <= 0) || (heigh <= 0))
         return heigh * width;
 }
