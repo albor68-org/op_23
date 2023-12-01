@@ -4,7 +4,9 @@
 
 int main () {
 
-    std::cout << "Наибольшее число: "<< std::max(1,2) << std::endl;
-    return 0;
+    std::cout << "Наибольшее число: "<< max(1,2) << std::endl;
+    std::cout << "Сумма двух чисел: "<<sum(7,21) << std::endl;
+    std::cout << "Площадь прямоугольника: "<< squ(6,5) << std::endl;
 
+    return 0;
 }
