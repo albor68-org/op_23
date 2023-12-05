@@ -7,5 +7,6 @@ int sum (int s1, int s2){
     return s1+s2;
 }
 int area (int a, int b){
-    return fabs(a*b);
+    if ((a>0) && (b>0)) return a*b;
+    else return 0;
 }
