@@ -8,5 +8,5 @@ int sum (int a, int b) {
 }
 
 int square (int heigh, int width) {
-        return heigh * width;
+    return heigh * width;
 }
