@@ -2,7 +2,7 @@
 #include <catch2/catch.hpp>
 
 //тест для максимума
-TEST_CASE() {
+TEST_CASE("Максимум") {
     CHECK(max(1, 2) == 2);
     CHECK(max(-1, -2) == -1);
     CHECK(max(0, 10) == 10);
@@ -10,7 +10,7 @@ TEST_CASE() {
 }
 
 //тест для суммы
-TEST_CASE() {
+TEST_CASE("Сумма") {
     CHECK(sum(5, 4) == 9);
     CHECK(sum(-2, 2) == 0);
     CHECK(sum(-5, -4) == -9);
@@ -18,7 +18,7 @@ TEST_CASE() {
 }
 
 //тест для умножения
-TEST_CASE() {
+TEST_CASE("Площадь") {
     CHECK(rectArea(5, 4) == 20);
     CHECK(rectArea(-2, 2) == 0);
     CHECK(rectArea(-5, -4) == 0);
