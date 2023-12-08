@@ -10,3 +10,14 @@ TEST_CASE() {
            CHECK(square(4,5)==20);
              
 }
+
+
+TEST_CASE("square") {
+CHECK (square(3,2)==6);
+CHECK (square(40,4)==160);
+}
+
+TEST_CASE("area abnormal") {
+CHECK_THROWS (square(-3,2));
+CHECK_THROWS (square(40,-4));
+}
