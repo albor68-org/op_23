@@ -1,26 +1,23 @@
 #include <iostream>
 #include "functions.h"
 
-int main (){
-   double R = 3;
-   double V = 4;                                    //Задаём значение радиуса
+int main () try {
 
-   std::cout << "The largest number: "
-             << max(5.8 , 3.1)<< std::endl;         //Вывод максимального числа
-   std::cout << "The sum of two numbers: "
-             << sum(2.2 , 3.5) << std::endl;        //Вывод суммы чисел
-
-   if ( square(R, V) == 0){
-       std::cout << "The area is missing"           //Если площадь окр. будет равна нулю или
-                 << std::endl;                      //будет отрицательной, то выводится сообщение
-   }
-   else {
-      std::cout << "The area of the circle: "
-                << square(R, V) << std::endl;       //Если площадь больше нуля,
-   }                                                //то выводим результат
+int s = square(4 , -2)  ;
 
     return 0;
 }
-
+catch (Area_error&) {
+    std::cerr << "square: нарушены предусловия!"
+    << "Аргументы функции должны быть больше 0"
+    <<std::endl;
+    return 1;
+}
+catch (...){
+    std::cerr << "???: Я не виноват!"
+    << "Что-то пошло не так, как задумывалось"
+    << std::endl;
+    return 2;
+}
 
 // Если я буду оставлять активным сеанс работы с компьютером, то с моими файлами могут начаться интересные приключения
