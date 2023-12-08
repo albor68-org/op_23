@@ -1,7 +1,7 @@
 #include "functions.h"
 #include <catch2/catch.hpp>
 
-TEST_CASE() {
+    TEST_CASE() {
 
     CHECK(max(1, 2) == 2);
 
@@ -10,8 +10,12 @@ TEST_CASE() {
     CHECK(max(0, 10) == 10);
 
     CHECK(max(-2, 2) == 2);
+    }
 
+    TEST_CASE() {
     CHECK(CYMM(3, 3)== 6);
-    
-    CHECK(square(2,5)== 10);
-}
+    }
+
+    TEST_CASE() {  
+    CHECK(area(2,5)== 10);
+    }
