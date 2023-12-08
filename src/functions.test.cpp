@@ -18,3 +18,19 @@ TEST_CASE("Square"){
 
 }
 
+TEST_CASE("Square3 norm"){  
+    CHECK(square3(4,2) == 8);
+    CHECK(square3(12,12) == 144);
+
+}
+
+TEST_CASE("Square3 abnormal"){  
+    CHECK_THROWS(square3(-4,2) );
+    CHECK_THROWS(square3(-12,-12) );
+    CHECK_THROWS(square3(4,-12) );
+
+}
+
+
+
+
