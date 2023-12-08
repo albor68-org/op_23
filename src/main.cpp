@@ -7,6 +7,6 @@ int main () {
 
     std::cout<<"сумма: "<<sum(1, 2)<<std::endl;
 
-    std::cout<<"площадь: "<<square(3, 4)<<std::endl;
+    std::cout<<"площадь: "<<square(-3, 4)<<std::endl;
     return 0;
 }
