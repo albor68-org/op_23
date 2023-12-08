@@ -13,6 +13,6 @@ TEST_CASE(){
 }
 
 TEST_CASE(){
-    CHECK(sq(1,2) == 2);
-    CHECK(sq(4,5) == 20);
+    CHECK(area(1,2) == 2);
+    CHECK(area(4,5) == 20);
 }
