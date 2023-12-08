@@ -1,5 +1,7 @@
 #include <iostream>
 
+class Area_error {};
+
 int max(int i1, int i2) {     // Функция поиска максимума из двух чисел
 
     if (i1 > i2) return i1;
@@ -16,11 +18,13 @@ int triangle_square(int height, int lenght){ // Площдь треугольн�
 }
 
 int square(int height, int width){    // Площадь прямоугольника
+    if (!((width>0) && (height>0))) throw Area_error();
     return height * width;
 }
 
-void write_1000(std::string word){
-    for(int i=0; i<=1000; i++){
+void write_1000(std::string word){  // Пишет введённое слово 1000 раз
+    for(int i=0; i<1000; i++){
         std::cout<<word<<std::endl;
     }
 }
+

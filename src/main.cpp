@@ -2,13 +2,15 @@
 #include <iostream>
 
 int main() {
-    /*
-    int triangle_height;
-    int triangle_lenght;
+	
+	int s = square(4, -2);
+	
+	return 0;
 
-    int square_height;
-    int square_lenght;
-    */
+
+
+
+    /*
     std::string word;
     std::cin>>word;
     write_1000(word);
@@ -34,6 +36,6 @@ int main() {
     std::cin >> i2;
     std::cout << "Площадь прямоугольника:" << std::endl;
     std::cout << square(i1, i2) << std::endl;
-
+*/
     return 0;
 }
