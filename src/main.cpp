@@ -16,7 +16,7 @@ int main () try {
 
 catch (Area_error&) {
 
-    std::cout << "[Ошибка в задании длины и ширины прямоугольника экранной формы]" << std::endl;
+    std::cerr << "[Ошибка в задании длины и ширины прямоугольника экранной формы]" << std::endl;
 
     return 1;
 
@@ -24,7 +24,7 @@ catch (Area_error&) {
 
 catch (...) {
 
-    std::cout << "[Ошибка]" << std::endl;
+    std::cerr << "[Ошибка]" << std::endl;
 
     return 2;
 
