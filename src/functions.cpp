@@ -1,3 +1,4 @@
+#include "functions.h"
 
 int max (int i1, int i2) {
     
@@ -15,4 +16,10 @@ int sum (int a, int b) {
 int squ (int a1, int b1) {
 
     return a1*b1;
+}
+
+int area(int w, int h) {
+    if(!((w>0)&&(h>0))) throw Area_error();
+
+    return w*h;
 }
