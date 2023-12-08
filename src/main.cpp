@@ -2,11 +2,21 @@
 #include <iostream>
 
 
-int main () {
-    std::cout<<"наибольшее число: "<<max(1, 2)<<std::endl;
-
-    std::cout<<"сумма: "<<sum(1, 2)<<std::endl;
-
-    std::cout<<"площадь: "<<square(-3, 4)<<std::endl;
+int main () try {
+    int s = square(4, -5);
     return 0;
+}
+
+catch (Area_Error&){
+    std::cerr<<"area: нарушены предусловия "
+    <<"аргументы функции должны быть больше 0"
+    <<std::endl;
+    return 1;
+}
+
+catch (...){
+    std::cerr<<"ой ой"
+    <<"что-то пошло не так"
+    <<std::endl;
+    return 2;
 }
