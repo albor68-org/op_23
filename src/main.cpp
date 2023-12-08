@@ -3,7 +3,7 @@
 
 
 int main () try {
-    int s = square(4, -5);
+    int s = square(0, 5);
     return 0;
 }
 
