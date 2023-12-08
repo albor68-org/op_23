@@ -20,3 +20,16 @@ TEST_CASE() {
     CHECK(squ(1,2)==2);
     CHECK(squ(10,20)==200);
 }
+
+TEST_CASE("area norm") {
+
+    CHECK (area(3,2) == 6);
+    CHECK(area(40,4) == 160);
+
+}
+
+TEST_CASE("area abnormal") {
+    CHECK_THROWS(area(-3,2));
+    CHECK_THROWS(area(40,-4));
+    CHECK_THROWS(area(-4,-10));
+}

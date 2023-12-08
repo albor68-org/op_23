@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main () try {
-    int s = area(4, -2);
+    int s = area(4, 3);
 
     return 0;
 }
