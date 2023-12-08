@@ -21,11 +21,20 @@ TEST_CASE("Сумма") {
 
 }
 
-//тест для умножения
-TEST_CASE("Площадь") {
+//тест функции rectArea в целом
+TEST_CASE("rectArea true") {
 
     CHECK(rectArea(5, 4) == 20);
     CHECK(rectArea(1, 3) == 3);
     CHECK(rectArea(20, 40) == 800);
-    
+
+}
+
+TEST_CASE("rectArea false") {
+
+    CHECK_THROWS(rectArea(-3, 4));
+    CHECK_THROWS(rectArea(0, 4));
+    CHECK_THROWS(rectArea(-15, 1));
+    CHECK_THROWS(rectArea(5, -2));
+
 }
