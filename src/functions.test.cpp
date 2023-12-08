@@ -15,7 +15,7 @@ TEST_CASE("СУММА") {
 }
 
 TEST_CASE("ПЛОЩАДЬ") {
-    CHECK(square(1, 2) == 2);
-    CHECK(square(4, 2) == 7);
-    CHECK(square(3, 3) == 9);
+    CHECK(area(1, 2) == 2);
+    CHECK(area(4, 2) == 7);
+    CHECK(area(3, 3) == 9);
 }

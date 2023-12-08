@@ -2,9 +2,13 @@
 
 #include <iostream> 
 
-int main () {
-    std::cout << "наибольшее число: " << max(1, 7) << std::endl;
-    std::cout << "сумма: " << sum(9, 2) << std::endl;
-    std::cout << "площадь: " << square(6, 3) << std::endl;
+int main () try {
+    int s = area (4, -2);
     return 0;
+}
+catch (Area_error&) {
+    return 1;
+}
+catch (...) {
+    return 2;
 }
