@@ -1,6 +1,5 @@
 #include <iostream>
-
-class Area_error {};
+#include "functions.h"
 
 int max(int i1, int i2) {     // Функция поиска максимума из двух чисел
 

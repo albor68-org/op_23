@@ -1,13 +1,9 @@
 #include "functions.h"
 #include <iostream>
 
-int main() {
+int main() try {
 	
 	int s = square(4, -2);
-	
-	return 0;
-
-
 
 
     /*
@@ -38,4 +34,14 @@ int main() {
     std::cout << square(i1, i2) << std::endl;
 */
     return 0;
+}
+
+catch (Area_error&){
+    std::cerr << "Area: Нарушены предусловия!"
+    << " Аргументы функции должны быть больше 0. ";
+    return 1;
+
+}
+catch (...){
+    return 2;
 }
