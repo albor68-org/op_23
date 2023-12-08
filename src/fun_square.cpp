@@ -1,9 +1,7 @@
-double square(double R){
-    bool i;    //Переменная используется для тестирования
+double square(double d, double f){
 
-    if (R <= 0){ i = 0;}
+    if (d > 0 && f > 0){ return 0;}
 
-    else { i = 1; }
+    else { return d * f; }
 
-    return R * R * 3.14 * i ;
 }
