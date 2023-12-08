@@ -11,7 +11,7 @@ TEST_CASE("Сумма") {
 TEST_CASE("Площадь") {
 
     CHECK(area(3, 2) == 6);
-    CHECK(area(1, 6) == 6);
+    CHECK(area(2, 33) == 66);
 }
 TEST_CASE("Площадь (Ошибка в данных)") {
 
