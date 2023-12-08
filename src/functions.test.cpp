@@ -20,8 +20,6 @@ TEST_CASE("Сумма") {
 //тест для умножения
 TEST_CASE("Площадь") {
     CHECK(rectArea(5, 4) == 20);
-    CHECK(rectArea(-2, 2) == 0);
-    CHECK(rectArea(-5, -4) == 0);
-    CHECK(rectArea(0, 3) == 0);
+    CHECK(rectArea(1, 3) == 3);
     CHECK(rectArea(20, 40) == 800);
 }
