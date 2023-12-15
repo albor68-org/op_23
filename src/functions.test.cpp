@@ -26,3 +26,7 @@ TEST_CASE("area ne norm"){
     CHECK_THROWS(area(-10, 0));
     CHECK_THROWS(area(0, 15));
 }
+TEST_CASE("mas"){
+    CHECK_THROWS(contrast({10, 12, 13, 14}) == -20);
+    
+}
