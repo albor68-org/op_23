@@ -1,5 +1,4 @@
 #include "functions.h"
-#include <vector>
 
 int max (int i1, int i2) {
 
@@ -22,15 +21,13 @@ int rectArea (int height, int width) {
 
 int contrast (std::vector<int> v) {
 
-    std::vector<int> checkV = v;
-
-    int tempMax = checkV[0];
+    int tempMax = v[0];
     int maxV = 0;
 
-    int tempMin = checkV[0];
+    int tempMin = v[0];
     int minV = 0;
 
-    for (int elMax : checkV) {
+    for (int elMax : v) {
 
         if (elMax >= tempMax) {
             tempMax = elMax;
@@ -39,7 +36,7 @@ int contrast (std::vector<int> v) {
         
     }
 
-    for (int elMin : checkV) {
+    for (int elMin : v) {
 
         if (elMin <= tempMin) {
             tempMin = elMin;
