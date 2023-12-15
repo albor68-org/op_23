@@ -17,10 +17,16 @@ TEST_CASE("Сумма")
     CHECK(sum(0 , 5) == 5);
 }
 
-TEST_CASE("Площадь прямоугольника")
+TEST_CASE("Площадь прямоугольника нормальная")
 {
     CHECK(screan_area(1080 , 720) == 777600);
-    // CHECK(screan_area(0 , 0) == 0);
-    // CHECK(screan_area(0 , 720) == 0);
-    // CHECK(screan_area(1080 , 0) == 0);
+}
+
+TEST_CASE("Площадь прямоугольника ошибочная")
+{
+    CHECK_THROWS(screan_area(-100 , 200) );
+    CHECK_THROWS(screan_area(-100 , -200) );
+    CHECK_THROWS(screan_area(100 , -200) );
+    CHECK_THROWS(screan_area(0 , 200) );
+    CHECK_THROWS(screan_area(100 , 0) );
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include "functions.h"
 
 int max(int i1, int i2)
 {
@@ -11,7 +12,7 @@ int sum(int a, int b)
     return a + b;
 }
 
-int screan_area(int height, int width)
+/*int screan_area(int height, int width)
 {
     if ((height <= 0) || (width <= 0))
     {
@@ -19,13 +20,18 @@ int screan_area(int height, int width)
     }
     return (height * width);
 }
+*/
 
-
-
-    class Area_error {};
-
-    int screan_area (int height, int width )
+int screan_area (int height, int width )
+{
+    if (!((height > 0) && (width > 0)))
     {
-        if (!((height > 0) && (width > 0))) trow Area_error;
-        return height * width;
+        throw screan_area_error();
     }
+    return height * width;
+}
+
+int contrast(std::vector<int> v) 
+{
+
+}

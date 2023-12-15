@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-int main() 
+/*int main() 
 {   
     int i1, i2;
     std::cout << "Введите числа: " << std::endl;
@@ -24,3 +24,20 @@ int main()
     
     return 0;
 }
+    */
+
+int main()
+    try{
+
+    int s = screan_area(-100 , 200);
+    return 0;
+    }
+
+    catch(screan_area_error&)
+    {
+        std::cerr << "screan_area: нарушены предусловия "
+        << " исправьте ошибку "
+        << std:: endl;
+        return 1;
+    }
+
