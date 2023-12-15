@@ -30,3 +30,11 @@ TEST_CASE("Площадь прямоугольника ошибочная")
     CHECK_THROWS(screan_area(0 , 200) );
     CHECK_THROWS(screan_area(100 , 0) );
 }
+
+
+/*
+TEST_CASE("contrast")
+{
+    CHECK_THROWS(contrast({7, 15 ,2, 45, 24}) == 43);
+}
+*/

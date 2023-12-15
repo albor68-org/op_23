@@ -12,16 +12,6 @@ int sum(int a, int b)
     return a + b;
 }
 
-/*int screan_area(int height, int width)
-{
-    if ((height <= 0) || (width <= 0))
-    {
-    std::cout << "ERROR-------ERROR------ERROR "<< std::endl;
-    }
-    return (height * width);
-}
-*/
-
 int screan_area (int height, int width )
 {
     if (!((height > 0) && (width > 0)))
@@ -31,7 +21,33 @@ int screan_area (int height, int width )
     return height * width;
 }
 
+/*
 int contrast(std::vector<int> v) 
 {
 
+vector<int> myVector [5]
+
+int max_v = myVector[0];
+
+    for(int i = 0; i < 5; ++i)
+    {
+        if(myVector[i] > max_v)
+        {
+            max_v = myVector[i];
+        }
+    }
+
+int min_v = v[0];
+
+    for(int i = 0; i < 5; ++i)
+    {
+        if(myVector[i] < min_v)
+        {
+            min_v = myVector[i];
+        }
+    }
+
+return max_v - min_v;
+
 }
+*/
