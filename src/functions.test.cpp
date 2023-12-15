@@ -21,3 +21,7 @@ TEST_CASE("area abnormal"){
     CHECK_THROWS(square(-10, -1));
     CHECK_THROWS(square(0, 5));
 }
+TEST_CASE("v"){
+    CHECK(contrast({1, 2, 3})==2);
+    CHECK(contrast({3, 2, 1})==2);
+}
