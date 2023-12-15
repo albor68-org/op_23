@@ -21,3 +21,8 @@ TEST_CASE("area ne norm"){
     CHECK_THROWS(area(1,-2) == -2);
     CHECK_THROWS(area(4,-5) == -20);
 }
+
+TEST_CASE("massiv"){
+    CHECK_THROWS(contrast({1,2,3,4}) == 3);
+    CHECK_THROWS(contrast({10,12,13,14}) == 4);
+}
