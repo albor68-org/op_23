@@ -1,6 +1,7 @@
 #include "functions.h"
 #include <catch2/catch.hpp>
 #include <math.h>
+#include <vector>
 
 //TEST_CASE("Сумма") {
 //
@@ -17,5 +18,10 @@ TEST_CASE("Площадь (случай неуспешной работы фун
     CHECK_THROWS(area(-3, 2));
     CHECK_THROWS(area(40, -2));
     CHECK_THROWS(area(-2, -2));
+}
+
+TEST_CASE("Вектор") {
+    std::vector<int> v1 = {10, 20, 30, 40, 50 }; 
+    CHECK(contrast(v1) == 40);
 }
 
