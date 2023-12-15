@@ -45,3 +45,10 @@ CHECK_THROWS(square(40 , 0));
 CHECK_THROWS(square(0 , 0));
 
 }
+
+TEST_CASE("massiv"){
+
+   CHECK_THROWS(contrast({1 , 2 , 3 , 4}) == 3);
+
+
+}

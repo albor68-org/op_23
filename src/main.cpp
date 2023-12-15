@@ -1,5 +1,6 @@
 #include <iostream>
 #include "functions.h"
+#include <vector>
 
 int main () try {
 
@@ -19,5 +20,6 @@ catch (...){
     << std::endl;
     return 2;
 }
+
 
 // Если я буду оставлять активным сеанс работы с компьютером, то с моими файлами могут начаться интересные приключения
