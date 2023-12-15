@@ -27,3 +27,10 @@ TEST_CASE("area abnormal"){
     CHECK_THROWS(area(40,0));
     CHECK_THROWS(area(0,0));
 }
+
+TEST_CASE("CONTRAST"){
+    CHECK(contrast({5,6,7,2,2,29})== 27);
+    CHECK(contrast({4,6,7,20})== 16);
+    CHECK(contrast({26,40,34,5})== 35);
+
+}

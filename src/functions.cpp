@@ -21,3 +21,25 @@ int area (int w, int h){
 
     return w*h;
         }
+ int contrast (std::vector<int>v){
+    int tempMax = v[0];
+    int maxV = 0;
+
+    int tempMin = v[0];
+    int minV = 0;
+    for (int elMax:v){
+        if (elMax >= tempMax){
+            tempMax = elMax;
+            maxV=elMax;
+
+        }
+    }
+    for (int elMin:v){
+        if (elMin <= tempMin){
+            tempMin = elMin;
+            minV=elMin;
+            
+        }
+    }
+    return(maxV-minV);
+ }
