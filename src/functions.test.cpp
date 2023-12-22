@@ -30,3 +30,8 @@
     CHECK_THROWS(area(-3,-232));
     CHECK_THROWS(area(0,6));
     }
+
+    TEST_CASE("massiv") {  
+    CHECK_THROWS(contrast ({1,2,3,4})==3);
+    CHECK_THROWS(contrast ({10,11,12,13,14})==4);
+    }
