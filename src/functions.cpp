@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "functions.h"
 
 
 int max (int i1, int i2) {
@@ -13,5 +13,7 @@ int sum(int s1, int s2){
 }
 
 int square(int sq1, int sq2){
+    if (!((sq1>0)&&(sq2>0))) throw Area_error();
     return sq1*sq2;
 }
+
