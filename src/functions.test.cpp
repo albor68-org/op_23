@@ -13,16 +13,20 @@ TEST_CASE() {
 
 }
 
- TEST_CASE("area norm") {
+TEST_CASE("area norm") {
     CHECK(square(3,4) ==12);
     CHECK(square(10,1) ==10);
     }
 
-TEST_CASE("area norm") {
+TEST_CASE("area abnorm") {
     CHECK_THROWS(square(-3,4) ==12);
     CHECK_THROWS(square(10,-1) ==10);
     CHECK_THROWS(square(-3,-4) ==12);
 
+    }
+    TEST_CASE("v") {
+    CHECK(contrast({1, 2, 3}) ==2);
+    CHECK(contrast({3, 2, 1}) ==2);
     }
 
     
