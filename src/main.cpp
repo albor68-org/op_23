@@ -1,14 +1,24 @@
 #include <iostream>
 #include "functions.h"
+#include <vector>
 
-int main (){
+int main () try {
 
-std::cout << "Наибольшее число: " << max(5.8 , 3.1)<< std::endl;
-
+int s = square(4 , -2)  ;
 
     return 0;
-
-
+}
+catch (Area_error&) {
+    std::cerr << "square: нарушены предусловия!"
+    << "Аргументы функции должны быть больше 0"
+    <<std::endl;
+    return 1;
+}
+catch (...){
+    std::cerr << "???: Я не виноват!"
+    << "Что-то пошло не так, как задумывалось"
+    << std::endl;
+    return 2;
 }
 
 
