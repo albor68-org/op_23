@@ -1,7 +1,9 @@
 
 #include <iostream>
-#include <function.h> // подключаем свою библиотеку
 using namespace std;
+int max(int a, int b){
+    if(a<b){return(b);}else{return(a);}
+}
 int main(){
 
 
