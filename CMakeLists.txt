@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.20)
 
 project(op_23 LANGUAGES CXX)
 
+
+
 find_package(Catch2 2 REQUIRED)
 
 add_executable(${PROJECT_NAME}
